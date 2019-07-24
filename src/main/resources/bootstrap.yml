@@ -1,8 +1,11 @@
 spring:
+  profiles:
+    active: local
+    
   cloud:
     config:
+      label: dev
       name: gateway-service
       discovery:
         service-id: config
         enabled: true
- 
